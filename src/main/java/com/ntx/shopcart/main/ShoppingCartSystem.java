@@ -11,7 +11,7 @@ public class ShoppingCartSystem {
 		Cart cart = createCart();
 		CartHandler cartHandler = new CartHandler(cart);
 		cartHandler.printTicket();
-		String path = "C:\\Users\\user\\Desktop\\Amani _Docs\\AmaniAyari_DocsOFII\\cart.json";
+		String path = "C:\\temp\\cart.json";
 		Utils.saveToJsonFile(cart, path);
 		
 	}

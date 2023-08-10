@@ -4,15 +4,16 @@ import com.ntx.shopcart.utils.Utils;
 
 public class Product implements IProduct {
 
-	String name;
+	transient String name;
 	double price;
 	int quantity;
-	
+	double total;
 	
 	public Product(String name, double price, int quantity) {
 		this.name = name;
 		this.price = price;
 		this.quantity = quantity;
+		this.total = price * quantity;
 	}
 	
 	@Override
